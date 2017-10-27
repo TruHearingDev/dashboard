@@ -27,7 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 # for dashboard
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rspec', '~> 3.4'
+gem 'rspec-rails', '~> 3.4'
+gem 'awesome_print'
+
+# %w[rspec-expectations rspec-mocks rspec-rails].each do |lib|
+#   gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+# end
 
 
 
@@ -45,8 +51,6 @@ gem 'rack-cors', :require => 'rack/cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec', '~> 3.4'
-  gem 'rspec-rails', '~> 3.4'
 end
 
 group :development do

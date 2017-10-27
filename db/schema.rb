@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 20171020202250) do
   enable_extension "plpgsql"
 
   create_table "products", force: :cascade do |t|
-    t.text     "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
